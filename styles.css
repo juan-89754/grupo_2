@@ -1,51 +1,52 @@
+/* Variables de colores */
+:root {
+    --verde-claro: #3ccb63;
+    --verde-oscuro: #1f7a3a;
+    --blanco: #ffffff;
+}
 
-        :root {
-            --verde-claro: #3ccb63;
-            --verde-oscuro: #1f7a3a;
-            --blanco: #ffffff;
-        }
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--blanco);
+    color: var(--verde-oscuro);
+}
 
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #ffffff;
-        }
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-        /* Contenedor de navegación */
-        .nav-container {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 20px 0;
-            background: var(--verde-oscuro);
-        }
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
 
-        .nav-container a {
-            text-decoration: none;
-            color: var(--blanco);
-            background: var(--verde-claro);
-            padding: 10px 18px;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.3s ease;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-        }
+/* Navegación */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    background-color: var(--verde-oscuro);
+}
 
-        .nav-container a:hover {
-            background: var(--verde-oscuro);
-            transform: translateY(-3px);
-        }
+.nav-container a {
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--verde-claro);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
 
-        /* Título */
-        header {
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        header h1 {
-            font-size: 32px;
-            color: var(--verde-oscuro);
-            margin: 0;
-        }
+.nav-container a:hover {
+    background-color: var(--verde-oscuro);
+    transform: translateY(-3px);
+}
