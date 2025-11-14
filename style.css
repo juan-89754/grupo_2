@@ -1,0 +1,201 @@
+/* Estilos Generales de la Sección */
+.seccion-destinos {
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+/* 1. Encabezado */
+.destinos-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.destinos-header h1 {
+    color: #004d40; /* Verde oscuro */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.destinos-header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* 2. Filtros */
+.destinos-filtros {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e0f2f1; /* Verde claro */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Para que se adapten mejor en móviles */
+}
+
+.destinos-filtros input, 
+.destinos-filtros select, 
+.destinos-filtros button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.destinos-filtros button {
+    background-color: #00796b; /* Verde turquesa */
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.destinos-filtros button:hover {
+    background-color: #004d40;
+}
+
+/* 3. Cuadrícula de Destinos (Grid) */
+.destinos-grid {
+    display: grid;
+    /* Cuadrícula de 3 columnas para escritorio */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo Base de la Tarjeta */
+.destino-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destino-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de la Imagen de la Tarjeta */
+.card-image {
+    height: 200px; /* Altura fija para la imagen */
+    background-size: cover;
+    background-position: center;
+    /* Transición para un efecto suave */
+    transition: transform 0.5s ease; 
+}
+
+/* **Rutas imágenes. */
+.paris { background-image: url('https://www.chooseparisregion.org/sites/default/files/news/6---Tour-Eiffel_AdobeStock_644956457_1920_72dpi.jpg'); } 
+.tulum { background-image: url('https://www.cataloniahotels.com/es/blog/wp-content/uploads/2020/01/tulum-1920x1280.jpg'); } 
+.tokio { background-image: url('https://img.static-kl.com/images/media/216337E7-BFE5-4AA6-9C9E180C3E5AC6A2'); } 
+
+.destino-card:hover .card-image {
+    transform: scale(1.05); /* Zoom ligero al pasar el ratón */
+}
+
+/* Contenido de la Tarjeta */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    color: #00796b;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.resumen {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.destacado-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.destacado-list li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.info-extra {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #333;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.info-extra .etiqueta {
+    background-color: #b2dfdb; 
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+/* 4. Call to Action (CTA) */
+.destinos-cta {
+    text-align: center;
+    padding: 40px;
+    background-color: #004d40;
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destinos-cta h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #333;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f57c00;
+}
+
+.destinos-cta p {
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* Media Query para Responsividad (Móviles) */
+@media (max-width: 768px) {
+    .destinos-grid {
+        /* En pantallas pequeñas, solo una columna */
+        grid-template-columns: 1fr; 
+    }
+    
+    .destinos-filtros {
+        /* los elementos de filtro ocupan todo el ancho */
+        flex-direction: column; 
+    }
+    
+    .destinos-header h1 {
+        font-size: 2em;
+    }
+}
