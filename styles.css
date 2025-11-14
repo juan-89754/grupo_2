@@ -1,4 +1,5 @@
-   :root {
+
+        :root {
             --verde-claro: #3ccb63;
             --verde-oscuro: #1f7a3a;
             --blanco: #ffffff;
@@ -10,15 +11,15 @@
             background: #ffffff;
         }
 
-    
-
-
+        /* Contenedor de navegación */
         .nav-container {
             max-width: 1200px;
             margin: auto;
             display: flex;
             justify-content: center;
             gap: 30px;
+            padding: 20px 0;
+            background: var(--verde-oscuro);
         }
 
         .nav-container a {
