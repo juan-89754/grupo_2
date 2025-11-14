@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.servicios {
+    padding: 60px 20px;
+    background-image: url('https://www.xtrafondos.com/wallpapers/paisaje-de-lago-en-las-montanas-al-amanecer-7254.jpg'); 
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #1b5e20; 
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2e7d32; 
+    margin-bottom: 40px;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+
+.card-servicio {
+    /* Estilos base de la tarjeta */
+    background: #ffffff; 
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform .3s, box-shadow .3s;
+
+  
+    background-size: cover;      
+    background-position: center; 
+    min-height: 250px;           
+    color: white;                
+    position: relative;          
+    
+   
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    text-align: left; 
+}
+
+
+.card-servicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 15px;
+    z-index: 1; 
+}
+
+
+.card-servicio h3,
+.card-servicio p,
+.card-servicio .btn-servicio {
+    position: relative;
+    z-index: 2;
+}
+
+.card-servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+.card-servicio h3 {
+    font-size: 1.4rem;
+    color: white; 
+    margin-bottom: 5px; 
+}
+
+.card-servicio p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.btn-servicio {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background: #4CAF50; 
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background .3s;
+}
+
+.btn-servicio:hover {
+    background: #2E7D32; 
+}
+
+
+.card-renta-autos {
+    background-image: url('https://th.bing.com/th/id/OIP.JPWPOxy-_XnBks3ODedsEgHaDt?w=327&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1'); 
+}
+
+.card-hoteles {
+    background-image: url('https://www.revistaequipar.com/admin/img/noticias/33EQNewsCol19-03.jpg'); 
+}
+
+.card-guias {
+    background-image: url('https://www.noticiaslagaceta.com/wp-content/uploads/2023/08/guia.jpg'); 
+}
+
+.cta-travel {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #2e7d32, #4caf50);
+    color: white;
+    margin-top: 60px;
+}
+
+.cta-travel h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
