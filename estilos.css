@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Usando una URL de imagen válida para el body */
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dd/Queens_Bath_Kauai_1.jpg'); 
+    
     background-size: cover; 
     background-position: center center;
     background-attachment: fixed;
@@ -11,7 +10,7 @@ body {
 
 .servicios {
     padding: 60px 20px;
-    background: #e8f5e9;
+    background-image: url('https://www.xtrafondos.com/wallpapers/paisaje-de-lago-en-las-montanas-al-amanecer-7254.jpg'); 
     font-family: "Poppins", sans-serif;
 }
 
@@ -35,7 +34,7 @@ body {
     gap: 30px;
 }
 
-/* 🔄 MODIFICACIONES CLAVE PARA LAS TARJETAS */
+
 .card-servicio {
     /* Estilos base de la tarjeta */
     background: #ffffff; 
@@ -44,10 +43,9 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform .3s, box-shadow .3s;
 
-    /* Nuevos estilos para la imagen de fondo */
-    background-size: cover;      /* Ajusta la imagen para cubrir la tarjeta */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat;
+  
+    background-size: cover;      
+    background-position: center; 
     min-height: 250px;           
     color: white;                
     position: relative;          
@@ -67,7 +65,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Capa oscura (40% de opacidad) */
+    background-color: rgba(0, 0, 0, 0.4); 
     border-radius: 15px;
     z-index: 1; 
 }
@@ -88,8 +86,8 @@ body {
 
 .card-servicio h3 {
     font-size: 1.4rem;
-    color: white; /* Asegura que el título sea blanco */
-    margin-bottom: 5px; /* Ajuste para el nuevo diseño */
+    color: white; 
+    margin-bottom: 5px; 
 }
 
 .card-servicio p {
@@ -101,7 +99,7 @@ body {
     display: inline-block;
     margin-top: 5px;
     padding: 10px 20px;
-    background: #4CAF50; /* Nuevo color para contraste sobre imagen */
+    background: #4CAF50; 
     color: white;
     border-radius: 8px;
     text-decoration: none;
@@ -113,8 +111,7 @@ body {
     background: #2E7D32; 
 }
 
-/* 🖼️ DEFINICIÓN DE IMÁGENES POR CLASE */
-/* REEMPLAZA estas URLs con tus enlaces directos a imágenes */
+
 .card-renta-autos {
     background-image: url('https://th.bing.com/th/id/OIP.JPWPOxy-_XnBks3ODedsEgHaDt?w=327&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1'); 
 }
